@@ -1,0 +1,43 @@
+PASS Indian local number normalization
+PASS international 00 prefix
+PASS international number retained
+PASS anonymous number rejected
+PASS dialing suffix rejected
+PASS paused assistant never authorizes
+PASS suffix collision never authorizes
+PASS hidden caller never authorizes
+PASS approved caller selects exact instructions
+PASS partial transcript waits
+PASS changed transcript restarts stability timer
+PASS insufficient silence waits
+PASS stable transcript processed once
+PASS duplicate transcript ignored
+PASS hangup discards delayed AI response
+PASS new caller cannot receive previous reply
+PASS non-delivery scenario selected
+PASS session expires after three minutes
+PASS twelve-turn upper bound
+PASS caller distinguished from assistant and contact header
+PASS contact header never becomes caller speech
+PASS manual input not overwritten
+PASS ambiguous send controls rejected
+PASS shared text ID distinguished by role ancestor
+PASS unknown Samsung structure fails closed
+PASS new Samsung entry control recognized
+PASS screening step recognized
+PASS text-call step recognized
+PASS unrelated feature never selected
+PASS first response identifies AI assistant
+PASS owner facts and caller reach actual model boundary
+PASS follow-up receives prior conversation
+PASS credential request blocked before model
+PASS Hindi OTP blocked
+PASS new conversation clears history
+PASS injection is quoted data; refusal quality still requires real model test
+PASS caller contexts isolated
+PASS empty model output rejected
+PASS overlong model output rejected
+PASS reset during generation discards stale reply
+PASS discarded reply not added to history
+
+41 core checks passed. Phone nodes and model outputs were simulated. No real LLM, Android APK or SIM call was executed.
